@@ -11,6 +11,7 @@ const database = {
         id: 2,
         name: "Hot Stuff",
         numMembers: 2,
+        genre: "Hip Hop",
         yearFormed: 2017
     },
 
@@ -18,6 +19,7 @@ const database = {
         id: 3,
         name: "Holy Moly",
         numMembers: 5,
+        genre: "Punk",
         yearFormed: 2020
     },
 
@@ -25,6 +27,7 @@ const database = {
         id: 4,
         name: "Geonovah",
         numMembers: 1,
+        genre: "Hip Hop",
         yearFormed: 2010
     },
 
@@ -32,6 +35,7 @@ const database = {
         id: 5,
         name: "Crab Rangoon",
         numMembers: 4,
+        genre: "Pop",
         yearFormed: 1989
     }],
 
