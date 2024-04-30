@@ -2,6 +2,8 @@ import { bandList } from "./bands.js";
 import { venueList } from "./venues.js";
 import { bookingList } from "./bookings.js";
 
+
+
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
