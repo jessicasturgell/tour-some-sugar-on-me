@@ -15,9 +15,9 @@ export const venueList = () => {
 }
 
 const findBooking = (venueId) => {
-    const bookingsForVenue = bookings.filter(booking => booking.venueName === venues.find(venue => venue.id === venueId).name)
-    const bandsPlaying = bookingsForVenue.map(booking => booking.bandName)
-    return bandsPlaying;
+    const venueName = venues.find(venue => venue.id === venueId).name
+    const uniqueBookings = [...new Set(bookings.filter(booking => booking.venueName === venueName).map(booking => booking.bandName))]
+    return uniqueBookings
 }
 
 document.addEventListener(
@@ -30,7 +30,7 @@ document.addEventListener(
                     if (venue.id === venueId) {
                         const bandsPlaying = findBooking(venueId)
                         if (bandsPlaying.length > 0) {
-                            window.alert(`Band lineup at ${venue.name}:\n${bandsPlaying.join("\n")}`)
+                            window.alert(`Bands playing at ${venue.name}:\n${bandsPlaying.join("\n")}`)
                         } else {
                             window.alert(`No bands playing at ${venue.name} currently.`)
                     }

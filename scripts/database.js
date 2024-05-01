@@ -39,6 +39,156 @@ const database = {
         yearFormed: 1989
     }],
 
+    bandMembers: [{
+        id: 1,
+        firstName: "Sgt.",
+        lastName: "Peppers",
+        yearBorn: 1982,
+        role: "lead singer",
+        band: "The Cannolis",
+        bandId: 1
+    },
+    
+    {
+        id: 2,
+        firstName: "Jelly",
+        lastName: "Roll",
+        yearBorn: 1980,
+        role: "electric guitar",
+        band: "The Cannolis",
+        bandId: 1
+    },    
+    
+    {
+        id: 3,
+        firstName: "Boolean",
+        lastName: "Please",
+        yearBorn: 1985,
+        role: "bass",
+        band: "The Cannolis",
+        bandId: 1
+    },
+        
+    {
+        id: 4,
+        firstName: "Song",
+        lastName: "Hottie",
+        yearBorn: 1999,
+        role: "singer",
+        band: "Hot Stuff",
+        bandId: 2
+    },
+        
+    {
+        id: 5,
+        firstName: "Dance",
+        lastName: "Hottie",
+        yearBorn: 1999,
+        role: "dancer",
+        band: "Hot Stuff",
+        bandId: 2
+    },
+        
+    {
+        id: 6,
+        firstName: "Gosh",
+        lastName: "Golly",
+        yearBorn: 2000,
+        role: "lead singer",
+        band: "Holy Moly",
+        bandId: 3
+    },
+        
+    {
+        id: 7,
+        firstName: "Jeepers",
+        lastName: "Creepers",
+        yearBorn: 1999,
+        role: "guitar",
+        band: "Holy Moly",
+        bandId: 3
+    },
+        
+    {
+        id: 8,
+        firstName: "Gee",
+        lastName: "Willikers",
+        yearBorn: 2001,
+        role: "guitar",
+        band: "Holy Moly",
+        bandId: 3
+    },
+        
+    {
+        id: 9,
+        firstName: "Jinkies",
+        lastName: "Mister",
+        yearBorn: 2000,
+        role: "bass",
+        band: "Holy Moly",
+        bandId: 3
+    },
+        
+    {
+        id: 10,
+        firstName: "Shooby",
+        lastName: "Dooby",
+        yearBorn: 1999,
+        role: "drums",
+        band: "Holy Moly",
+        bandId: 3
+    },
+        
+    {
+        id: 11,
+        firstName: "Geonoah",
+        lastName: "Davis",
+        yearBorn: 1996,
+        role: "rapper",
+        band: "Geonovah",
+        bandId: 4
+    },
+        
+    {
+        id: 12,
+        firstName: "Cheese",
+        lastName: "Wonton",
+        yearBorn: 1970,
+        role: "lead singer",
+        band: "Crab Rangoon",
+        bandId: 5
+    },
+        
+    {
+        id: 13,
+        firstName: "Lo",
+        lastName: "Mein",
+        yearBorn: 1971,
+        role: "guitar",
+        band: "Crab Rangoon",
+        bandId: 5
+    },
+        
+    {
+        id: 14,
+        firstName: "Egg",
+        lastName: "Roll",
+        yearBorn: 1969,
+        role: "bass",
+        band: "Crab Rangoon",
+        bandId: 5
+    },
+        
+    {
+        id: 15,
+        firstName: "Chicken",
+        lastName: "Teriyaki",
+        yearBorn: 1970,
+        role: "drums",
+        band: "Crab Rangoon",
+        bandId: 5
+    }],
+
     venues: [{
         id: 1,
         name: "Hot Girl Club",
@@ -135,6 +285,10 @@ const database = {
 
 export const getBands = () => {
     return database.bands.map(band => ({...band}))
+}
+
+export const getBandMembers = () => {
+    return database.bandMembers.map(bandMember => ({...bandMember}))
 }
 
 export const getVenues = () => {
